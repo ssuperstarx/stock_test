@@ -1,11 +1,11 @@
-1. 매일 사는 종목 (TQQQ) 매수/매도 포지션 코드
-%matplotlib inline
+#1. 매일 사는 종목 (TQQQ) 매수/매도 포지션 코드
+
 
 import numpy as np
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
-
+# %matplotlib inline
 # =========================
 # 설정
 # =========================
@@ -22,7 +22,7 @@ SELL_Z1   =  1.5     # (MA200 위) Z >= +1.5면 트레이딩 일부매도
 SELL_Z2   =  2.0     # (MA200 위) Z >= +2.0면 더 강한 일부매도
 
 # 디폴트 코어 DCA
-DCA_DOLLARS_PER_DAY = 100.0
+DCA_DOLLARS_PER_DAY = 7.0
 
 # 트레이딩 매매 비율(수량 기준) - 트레이딩 레이어 보유분에서만 매도
 SELL1_FRACTION = 0.20
@@ -38,7 +38,7 @@ INTERVAL = "1d"
 
 # 실제 계좌 기준점 (12/19 장 시작 전이면 최신 거래일은 12/18로 잡히는 게 정상)
 START_DATE = "2025-12-18"
-INITIAL_EQUITY = 3049.85       # 2025-12-18 기준 평가금액
+INITIAL_EQUITY = 223.57       # 2025-12-18 기준 평가금액
 INITIAL_TRADE_CASH = 0.0
 INITIAL_TRADE_SHARES = 0.0
 

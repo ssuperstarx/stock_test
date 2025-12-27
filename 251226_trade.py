@@ -1,10 +1,10 @@
-2. 지수 추종 매수/매도 포지션 코드
-%matplotlib inline
+#2. 지수 추종 매수/매도 포지션 코드
+
 import numpy as np
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
-
+# %matplotlib inline
 # ============================================================
 # 0) 매일 너가 바꾸는 값 (매일 실행 시 여기만 수정)
 # ============================================================
@@ -304,7 +304,7 @@ tail = pd.DataFrame({
 })
 
 print("\n--- Last 20 trading days snapshot (with Action) ---")
-display(tail.round({"QQQ_Close":2,"RAI":3,"Q":3,"TargetW":2,"PrevW(approx)":2}))
+print(tail.round({"QQQ_Close":2,"RAI":3,"Q":3,"TargetW":2,"PrevW(approx)":2}))
 
 # ============================================================
 # 10) (옵션) 최근 1년 차트
